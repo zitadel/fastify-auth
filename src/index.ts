@@ -1,6 +1,6 @@
 /**
  * :::warning
- * `@auth/fastify` is currently experimental. The API _will_ change in the
+ * `@zitadel/fastify-auth` is currently experimental. The API _will_ change in the
  * future.
  * :::
  *
@@ -10,14 +10,14 @@
  *
  * ## Installation
  * ```bash npm2yarn
- * npm install @auth/fastify
+ * npm install @zitadel/fastify-auth
  * ```
  *
  * ## Usage
  *
  * ```ts title="src/routes/auth.route.ts"
- * import { FastifyAuth } from "@auth/fastify"
- * import GitHub from "@auth/fastify/providers/github"
+ * import { FastifyAuth } from "@zitadel/fastify-auth"
+ * import GitHub from "@auth/core/providers/github"
  * import Fastify from "fastify"
  *
  * // If app is served through a proxy, trust the proxy to allow HTTPS
@@ -48,7 +48,7 @@
  * preHandler hook as follows
  *
  * ```ts title="app.ts"
- * import { getSession } from "@auth/fastify"
+ * import { getSession } from "@zitadel/fastify-auth"
  *
  * // Decorating the reply is not required but will optimise performance
  * // Only decorate the reply with a value type like null, as reference types
@@ -73,7 +73,7 @@
  * the `session` property on the reply object:
  *
  * ```ts title="@types/fastify/index.d.ts"
- * import { Session } from "@auth/fastify";
+ * import { Session } from "@zitadel/fastify-auth";
  * declare module "fastify" {
  *   interface FastifyReply {
  *     session: Session | null;
@@ -97,7 +97,7 @@
  * }
  * ```
  *
- * @module @auth/fastify
+ * @module @zitadel/fastify-auth
  */
 
 import {
@@ -155,8 +155,8 @@ declare module 'fastify' {
  *
  * @example
  * ```ts
- * import { FastifyAuth } from "@auth/fastify"
- * import GitHub from "@auth/fastify/providers/github"
+ * import { FastifyAuth } from "@zitadel/fastify-auth"
+ * import GitHub from "@auth/core/providers/github"
  *
  * const authPlugin = FastifyAuth({
  *   providers: [GitHub],

@@ -34,7 +34,7 @@ of applications or deployment scenarios might warrant different approaches:
   beyond simple authentication. This requires seamless integration between
   Auth.js user data and Fastify authorization patterns.
 
-This integration, `@auth/fastify`, aims to provide the flexibility to
+This integration, `@zitadel/fastify-auth`, aims to provide the flexibility to
 handle such scenarios. It allows you to leverage the full Auth.js ecosystem
 while maintaining Fastify best practices, ultimately leading to a more
 effective and less burdensome authentication implementation.
@@ -44,7 +44,7 @@ effective and less burdensome authentication implementation.
 Install using NPM by using the following command:
 
 ```sh
-npm install @auth/fastify @auth/core
+npm install @zitadel/fastify-auth @auth/core
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ First, add the plugin to your Fastify app:
 
 ```typescript
 import Fastify from 'fastify';
-import { FastifyAuth } from '@auth/fastify';
+import { FastifyAuth } from '@zitadel/fastify-auth';
 import GoogleProvider from '@auth/core/providers/google';
 
 const fastify = Fastify({
@@ -98,7 +98,7 @@ authentication:
 **Basic Usage:**
 
 ```typescript
-import { getSession } from '@auth/fastify';
+import { getSession } from '@zitadel/fastify-auth';
 import type { Session } from '@auth/core/types';
 
 // Public route - no authentication needed
@@ -145,7 +145,7 @@ providers and custom session configuration:
 
 ```typescript
 import Fastify from 'fastify';
-import { FastifyAuth, getSession } from '@auth/fastify';
+import { FastifyAuth, getSession } from '@zitadel/fastify-auth';
 import GoogleProvider from '@auth/core/providers/google';
 import GitHubProvider from '@auth/core/providers/github';
 
@@ -262,4 +262,4 @@ contributions.
 
 ## License
 
-ISC © 2024 Auth.js Team
+Apache-2.0
