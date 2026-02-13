@@ -107,6 +107,7 @@
   "homepage": "https://github.com/zitadel/fastify-auth",
   "bugs": "https://github.com/zitadel/fastify-auth/issues",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
