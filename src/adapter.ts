@@ -8,7 +8,7 @@
  *
  * @example
  * ```ts
- * import type { Adapter } from "@auth/fastify/adapters"
+ * import type { Adapter } from "@zitadel/fastify-auth/adapters"
  * import { MongoDBAdapter } from "@auth/mongodb-adapter"
  *
  * const adapter: Adapter = MongoDBAdapter(mongoClient)
