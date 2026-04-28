@@ -46,8 +46,6 @@
     "session",
     "jwt",
     "typescript",
-    "express",
-    "fastify",
     "guards",
     "decorators",
     "rbac",

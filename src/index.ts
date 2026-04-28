@@ -115,6 +115,8 @@ import type {
 import formbody from '@fastify/formbody';
 import { toWebRequest, toFastifyReply } from './lib/index.js';
 
+export { AuthError, CredentialsSignin } from '@auth/core/errors';
+
 /**
  * Configuration options for Fastify Auth, extending Auth.js core config
  * but excluding the raw property which is not applicable to Fastify.
