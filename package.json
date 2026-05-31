@@ -58,7 +58,6 @@
     "security"
   ],
   "devDependencies": {
-    "@auth/core": "^0.40.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@jest/globals": "^30.0.5",
     "@mridang/eslint-defaults": "^1.6.3",
@@ -73,12 +72,11 @@
     "@types/qs": "^6.14.0",
     "@types/supertest": "^6.0.3",
     "cookiejar": "^2.1.4",
-    "eslint": "9.32.0",
-    "fastify": "^5.4.0",
+    "eslint": "^9.39.1",
     "jest": "30.0.5",
     "jest-junit": "^17.0.0",
     "knip": "^5.83.0",
-    "prettier": "3.6.2",
+    "prettier": "^3.6.2",
     "semantic-release": "^25.0.1",
     "superagent": "^10.2.3",
     "supertest": "^7.1.4",
@@ -109,5 +107,8 @@
   "bugs": "https://github.com/zitadel/fastify-auth/issues",
   "publishConfig": {
     "access": "public"
+  },
+  "overrides": {
+    "h3": "^1.15.11"
   }
 }
